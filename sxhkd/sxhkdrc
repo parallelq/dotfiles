@@ -1,0 +1,56 @@
+# Terminal
+super + Return
+	alacritty	
+
+# Rofi
+super + r
+	rofi -show run
+
+# Application keybinding
+super + shift + {f,w,e}
+	{thunar,firefox-bin,vim}
+
+# Screenshot
+super + shift + s
+	scrot -s ~/Pictures/1-.png
+
+# Quit/Restart bspwm
+super + alt + {q,r}
+	bspc {quit,wm -r}
+
+# Close window
+super + c
+	bspc node -c
+
+# Kill window
+super + alt + Escape
+	xkill
+
+# Monocle or Fullscreen
+super + f
+	bspc desktop -l next
+
+# Splitting H V or Cancel
+super + {h,v,q}
+	bspc node -p {east,south,cancel}
+
+# Float or Tile
+super + space
+	bspc node -t "~"{floating,tiled}
+
+# Pseudo Tiled or Tile
+super + {p,t}
+	bspc node -t {pseudo_tiled,tiled}
+
+# Send focused window to another workspace
+super + {_,shift + }{1-8}
+	bspc {desktop -f,node -d} '^{1-8}'
+
+# Volume Control
+XF86AudioLowerVolume
+	amixer set Master 5%-
+XF86AudioRaiseVolume
+	amixer set Master 5%+
+XF86AudioMute
+        amixer set Master toggle
+
