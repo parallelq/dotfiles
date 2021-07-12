@@ -1,0 +1,10 @@
+# required by sys-kernel/genkernel-4.2.3::gentoo[firmware]
+# required by genkernel (argument)
+=sys-kernel/linux-firmware-20210629 linux-fw-redistributable no-source-code
+# required by media-libs/nv-codec-headers-9.1.23.1::gentoo
+# required by media-video/ffmpeg-4.4::gentoo[video_cards_nvidia]
+# required by www-client/firefox-bin-89.0.2::gentoo[ffmpeg]
+# required by firefox-bin (argument)
+=x11-drivers/nvidia-drivers-460.67 NVIDIA-r2
+# required by discord-bin (argument)
+>=net-im/discord-bin-0.0.15 all-rights-reserved
